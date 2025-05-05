@@ -1,0 +1,634 @@
+:root {
+	/* 	:root è comunemente usato per definire variabili CSS globali come di seguito
+		che possono essere accessibili in tutto il documento
+	*/
+	--primary-color: #dda900;
+	--text-color: #333;
+	--card-bg: rgb(255, 255, 255);
+	--border-radius: 16px;
+	--marquee-box-width: 80vw;
+	--marquee-box-height: 20vh;
+	--marquee-elements-displayed: 5;
+	--marquee-element-width: calc(var(--marquee-box-width) / var(--marquee-elements-displayed));
+	--marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	background: #f7f7f7;
+	min-height: 100vh;
+	color: var(--text-color);
+}
+
+header {
+	background: var(--primary-color);
+	color: white;
+	padding: 2rem 0;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+header p {
+	color: #f9f9f9;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+iframe {
+	margin-top: 20px;
+	/*margin-left: 50px;*/
+	width: 800px;
+	height: 450px;
+	border-radius: 15px; /* Arrotonda gli angoli con un raggio di 15px */
+    border: 2px solid #ccc; /* Aggiungi un bordo sottile e chiaro */
+}
+
+.iframe3d {
+
+	border-radius: 15px; /* Arrotonda gli angoli con un raggio di 15px */
+    border: 2px solid #ccc; /* Aggiungi un bordo sottile e chiaro */
+}
+
+.container-flex {
+	display: flex;
+	gap: 4rem; /* Aggiungiamo un po' di spazio tra la sidebar e il contenuto */
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 0 1rem;
+}
+
+.right-sidebar {
+	flex: 0 0 400px; /* Fisso a 300px di larghezza */
+	background-color: #847ced; /* Ripristinato il colore della sidebar */
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	color: rgb(237, 234, 234);
+}
+
+.main-content {
+	flex: 0.7; /* Occupiamo tutto lo spazio rimanente */
+	
+}
+
+section {
+	background: var(--card-bg);
+	border-radius: var(--border-radius);
+	border: 1px solid rgb(238, 238, 238);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	transition: all 0.3s ease;
+}
+
+section1 {
+	background: var(--card-bg);
+	border-radius: var(--border-radius);
+	border: 1px solid rgb(238, 238, 238);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	transition: all 0.3s ease;
+}
+
+section:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #1e293b;
+	margin-bottom: 1.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+h2 i {
+	color: var(--primary-color);
+	font-size: 24px;
+}
+
+h3 i {
+	color: rgb(237, 234, 234);
+	font-size: 24px;
+}
+
+h3 {
+	color: var(--primary-color);
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+a {
+	color: #847ced;
+	text-decoration: none; /* opzionale, toglie la sottolineatura */
+  }
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 1rem;
+	transition: all 0.2s ease;
+}
+
+ul li:before {
+	content: '▹';
+	color: var(--primary-color);
+	position: absolute;
+	left: 0;
+}
+
+.marquee-content li::before {
+	content: none !important;
+  }
+
+ul li:hover {
+	transform: translateX(5px);
+}
+
+.sidebar-link {
+	color: white; /* Imposta il colore del testo a bianco */
+	font-weight: bold; /* Rende il testo in grassetto */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombreggiatura al testo */
+	text-decoration: none; /* Rimuove la sottolineatura predefinita dei link */
+  }
+
+.competenze ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.profile-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 1rem;
+	border: 3px solid white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#contact-info p {
+	margin: 0.3rem 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 0 1rem 0 0.7rem;
+	border-radius: 12px;
+}
+#contact-info a {
+	text-decoration: none;
+}
+#contact-info a:hover {
+	text-decoration: underline;
+	text-decoration-color: white;
+	text-underline-offset: 0.2rem;
+}
+
+#contact-info i {
+	color: white;
+}
+
+/*footer {
+	text-align: center;
+	padding: 2rem;
+	margin-top: 2rem;
+	border-top: 1px solid #ddd;
+}*/
+
+#social-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+#social-links a {
+	color: var(--text-color);
+	font-size: 24px;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+#social-links a:hover {
+	color: var(--primary-color);
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	margin: 0; /* Rimuove il margine esterno */
+  	padding: 0.1rem 0; /* Riduce il padding sopra e sotto */
+}
+
+.footer-links h2 {
+	margin: 0; /* Rimuove il margine predefinito dell'elemento <h2> */
+	padding: 0; /* Rimuove il padding del titolo */
+	font-size: 1.5rem; /* Modifica la dimensione del font se necessario */
+  }
+
+button,
+.button {
+	background: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 0.8rem 1.5rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+button:hover {
+	background: #847ced;
+	transform: translateY(-2px);
+}
+
+/* Bottone inferiore con colore solido, non trasparente */
+.home-button-bottom {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: #847ced; /* Colore personalizzato opaco (cambia qui) */
+	color: white;
+	border: none;
+	padding: 10px 16px;
+	border-radius: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	/*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);*/
+	z-index: 1; /* Mantiene il bottone sopra il fondo */
+  }
+  
+  /* Bottone superiore con effetto glass */
+  .home-button-glass-animated {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: rgba(255, 255, 255, 0.1); /* Effetto glass trasparente */
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	color: white;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 10px 16px;
+	border-radius: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	box-shadow: 0 4px 20px rgba(146, 111, 241, 0.6);
+	transition: background 0.3s ease, transform 0.3s ease;
+	z-index: 2; /* Mantiene il bottone superiore sopra quello inferiore */
+  }
+  
+  .home-button-glass-animated i {
+	transition: transform 0.5s ease;
+  }
+  
+  .home-button-glass-animated:hover {
+	background: rgba(255, 255, 255, 0.2); /* Hover effetto glass */
+	transform: scale(1.05);
+  }
+  
+  .home-button-glass-animated:hover i {
+	transform: rotate(360deg);
+  }
+
+#contattami form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-group label {
+	font-weight: 500;
+	color: #1e293b;
+}
+
+.form-group input,
+.form-group textarea {
+	padding: 0.8rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 2px rgba(0, 96, 221, 0.2);
+}
+
+.submit-btn {
+	align-self: flex-start;
+	margin-top: 0.5rem;
+	background-color: var(--primary-color);
+	font-weight: 500;
+}
+
+.submit-btn:hover {
+	background-color: #847ced;
+	transform: translateY(-2px);
+}
+
+
+/* inizio css per sezioni dinamiche */
+.tab-titles
+{
+display: flex;
+margin: 20px 0 35px;
+
+}
+.tab-links
+{
+	
+	margin-right: 50px;
+	font-size: 18px; 
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+}
+	.tab-links::after
+	{
+		content: '';
+		width: 0;
+		height: 2px;
+		background: #ffffff; 
+		position: absolute;
+		left: 0;
+		bottom: -12px;
+		transition: 0.3s;
+	}
+.tab-links.active-link::after 
+{
+	
+	width: 65%;
+}
+
+.active-link {
+    color: var(--primary-color);
+}
+
+.tab-contents ul li
+{
+	list-style: none;
+	margin: 10px 0;
+	
+}
+.tab-contents ul li span {
+		color: #464646;
+
+		font-size: 14px;
+		
+	}
+.tab-contents
+{
+	display: none;
+
+}
+.tab-contents.active-tab
+{
+		display: block; 
+
+}
+/* fine css sezioni dinamiche */
+
+.yellow {
+	color: var(--primary-color);
+}
+
+@media print {
+	footer,
+	button,
+	#contattami {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.container-flex {
+		flex-direction: column; /* Mettiamo la sidebar sopra o sotto */
+	}
+
+	.right-sidebar {
+		flex: 1; /* La sidebar occupa tutto lo spazio orizzontale */
+		margin-bottom: 1rem; /* Distanziamo la sidebar dal contenuto */
+	}
+
+	.main-content {
+		flex: 1; /* Il contenuto principale occupa tutto lo spazio disponibile */
+	}
+
+	
+}
+
+@keyframes typing {
+	0% { width: 0; }
+	100% { width: 100%; }
+  }
+  
+  .typing-effect {
+	font-size: 24px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	animation: typing 3s steps(30) 1s forwards;
+  }
+
+  
+
+  /* slide animata di immagini*/
+  
+  footer {
+  position: relative;
+  overflow: visible;
+  }
+  
+  .scrolling-container {
+	width: 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
+	position: relative;
+	z-index: 10;
+  }
+  
+  .scrolling-track {
+	display: flex;
+	animation: scrollLeft 10s linear infinite;
+	width: 100%;
+  }
+  
+  .image-item {
+	position: relative;
+	margin: 0 10px;
+	flex-shrink: 0;
+	z-index: 1;
+  }
+  
+  .image-item img {
+	height: 100px;
+	width: auto;
+	transition: transform 0.3s;
+	display: block;
+  }
+  
+  /* Hover zoom */
+  .image-item:hover img {
+	transform: scale(1.1);
+  }
+  
+  
+
+  #custom-tooltip {
+	position: fixed;
+	background-color: #333;
+	color: white;
+	padding: 6px 10px;
+	font-size: 13px;
+	border-radius: 6px;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	z-index: 9999;
+  }
+  
+  #custom-tooltip::after {
+	content: "";
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 6px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+  }
+  
+  /* Wrapper */
+  
+  .marquee-container {
+	max-width: 100%; /* Limita la larghezza massima */
+	width: 100%; /* Per usare il 100% della larghezza disponibile */
+	overflow: hidden; /* Nasconde il contenuto che esce fuori */
+	margin: 0 auto;
+	position: relative;
+	height: 100px; /* Altezza del contenitore */
+  }
+  
+  .marquee-content {
+	display: flex;
+	gap: 0;
+	position: absolute;
+	animation: scroll-left 40s linear infinite;
+  }
+  
+  .marquee-content li {
+	list-style: none;
+	flex-shrink: 0;
+  }
+  
+  .marquee-content .image-item {
+	display: inline-block;
+  }
+  
+  .marquee-content img {
+	height: 80px; /* Imposta l'altezza delle immagini */
+	width: auto; /* Mantiene il rapporto di aspetto */
+	object-fit: contain;
+	user-select: none; /* Previene la selezione accidentale */
+	pointer-events: none; /* Disabilita gli eventi per le immagini */
+  }
+
+  /* Pausa su hover */
+  .marquee-content:hover {
+	animation-play-state: paused;
+  }
+  
+  /* Animazione */
+  @keyframes scroll-left {
+	0% {
+	  transform: translateX(50%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  
+/* Posizione fissa in basso a destra */
+.back-to-top {
+	position: fixed;
+	bottom: 20px; /* Distanza dal basso */
+	right: 20px;  /* Distanza dalla destra */
+	background-color:  #dda900; /* Colore di sfondo */
+	color: white; /* Colore del testo */
+	padding: 10px 15px; /* Spaziatura */
+	border-radius: 50%; /* Forma circolare */
+	font-size: 20px; /* Dimensione del testo */
+	text-align: center;
+	cursor: pointer;
+	display: none; /* Inizialmente nascosto */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	z-index: 9999; /* Aggiungi questo per garantire che sia sopra gli altri elementi */
+  }
+  
+  .back-to-top:hover {
+	background-color: #847ced; /* Cambia colore al passaggio del mouse */
+  }
+  
+  .balloon-icon {
+	font-size: 24px; /* Puoi personalizzare la dimensione dell'icona */
+  }
+  
+  /* Mostra il bottone quando l'utente ha scrollato verso il basso */
+  .show-back-to-top {
+	display: block;
+  }
+

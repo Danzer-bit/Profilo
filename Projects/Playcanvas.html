@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae di Alexandro Meloni</title>
+  <!-- Carichiamo un font esterno -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Carichiamo una libreria di icone -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Foglio di stile CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="profile-container">
+      <div>
+        <!-- Bottone inferiore con colore solido (non trasparente) -->
+        <button class="home-button-bottom" onclick="window.location.href='../Homepage.html'">
+        <i class="ri-home-line"></i> Home
+        </button>
+
+        <!-- Bottone superiore con effetto glass -->
+        <button class="home-button-glass-animated" onclick="window.location.href='../Homepage.html'">
+          <i class="ri-home-line"></i> Home
+        </button>
+      </div>
+      <h1>Portfolio Alexandro Meloni</h1>
+      <p>Software Developer - 3D Artist </p>
+      <div id="contact-info">
+        <a href="mailto:alex93.m@email.com">
+          <p><i class="ri-mail-line"></i> alex93.m@email.com </p>
+        </a>
+        <p><i class="ri-phone-line"></i> +39 351 556 5509</p>
+        <p><i class="ri-map-pin-line"></i> Cagliari, Italia</p>
+      </div>
+    </div>
+
+    
+  </header>
+
+  <main class="container-flex">
+    <!-- Sidebar -->
+    <section class="right-sidebar">
+      <h3><i class="ri-list-check"></i>  <b style="color: black;; font-size: 26px;">Link utili:</b></h3>
+      <ul>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Portfolio Gallery</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Animation Showreel</a></span> <br> <i style="margin-left: 8px;">Video montage delle animazioni</i> <br> <i style="margin-left: 8px;">renderizzate con Blender.</i> </li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> CV Europass</a></span> <br> <i style="margin-left: 8px;">Scarica il mio CV Europass aggiornato.</i></li>
+        <p><br></p>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Sketchfab viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Custom Babilon.Js viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Custom Playcanva viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Gradio viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <p><br></p>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Sito web Team di sviluppo - Hololizard <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Unity Games <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Unreal Engine 5 Games <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Pubblicazioni <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+      </ul>
+    </section>
+
+    <!-- Contenuto principale -->
+    <!-- Inizio prima sezione -->
+    <section.1 class="main-content">
+      <section id="viewer">
+        <h2><i class="ri-briefcase-fill"></i>Playcanvas Scenes</h2>
+        <p>
+        <div class="tab-wrapper tab-wrapper-viewer"> 
+        <!-- Inizio tabella dinamica 1-->
+        <div class="tab-titles">
+            <p class="tab-links active-link" data-tab="one">3D Viewer</p>
+            <p class="tab-links" data-tab="two">First Person</p>
+            <p class="tab-links" data-tab="bike">3D Variant</p>
+        </div>
+        <!-- Primo tab -->
+        <div class="tab-contents active-tab" data-content="one">
+          <div style="text-align: center;">
+              <iframe 
+                src="https://playcanv.as/p/kpDtniKI/" 
+                width="800" 
+                height="500" 
+                title="Playcanvas"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+              </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Esempio di Visualizzatore 3D con Playcanvas.</p>
+              <br><br>
+              <p>
+                Ho frequentato il <b>Liceo Scientifico Tecnologico ITIS Giua</b>, dove ho iniziato ad approcciarmi alla programmazione, al disegno tecnico e alla grafica digitale.
+                Successivamente, ho approfondito autonomamente lo studio delle arti grafiche digitali, avvicinandomi al mondo del 3D
+                tramite <b>fotogrammetria, modellazione, texturing e animazione.</b></p>
+              <p>
+                Dopo aver completato un corso come Tecnico di Rilievo 3D, ho imparato a utilizzare software fotogrammetrici come <b>Agisoft
+                Metashape</b> e <b>3DF Zephyr</b> per la creazione di <b>modelli 3D</b> e <b>rilievi del territorio</b>. In parallelo, ho iniziato a studiare <b>Blender</b>,
+                focalizzandomi sulla <b>modellazione 3D</b> con particolare attenzione all'<b>ArchViz</b> e alla creazione di modelli ottimizzati per la
+                visualizzazione in <b>real-time.</b></p> 
+            </p>
+            <ul>
+              <li><span>Gradio Chatbot</span><br>Designing Web / App Interfaces</li>
+              <li><span>Game Development</span><br>Designing Web / App Interfaces</li>
+              <li><span>Video Making</span><br>Designing Web / jhdfagajhfgb </li>
+            </ul>
+        </div>
+        <!-- Secondo tab -->
+        <div class="tab-contents" data-content="two">
+          <div style="text-align: center;">
+            <iframe 
+                src="https://playcanv.as/p/VL8stiRb/" 
+                width="800" 
+                height="500" 
+                title="Playcanvas"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+            </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Esempio di scena navigabile in prima persona con Playcanvas.</p> 
+        
+          <br><br>
+              <p>
+                Ho frequentato il <b>Liceo Scientifico Tecnologico ITIS Giua</b>, dove ho iniziato ad approcciarmi alla programmazione, al disegno tecnico e alla grafica digitale.
+                Successivamente, ho approfondito autonomamente lo studio delle arti grafiche digitali, avvicinandomi al mondo del 3D
+                tramite <b>fotogrammetria, modellazione, texturing e animazione.</b></p>
+              <p>
+                Dopo aver completato un corso come Tecnico di Rilievo 3D, ho imparato a utilizzare software fotogrammetrici come <b>Agisoft
+                Metashape</b> e <b>3DF Zephyr</b> per la creazione di <b>modelli 3D</b> e <b>rilievi del territorio</b>. In parallelo, ho iniziato a studiare <b>Blender</b>,
+                focalizzandomi sulla <b>modellazione 3D</b> con particolare attenzione all'<b>ArchViz</b> e alla creazione di modelli ottimizzati per la
+                visualizzazione in <b>real-time.</b></p> 
+            </p>
+            <ul>
+              <li><span>Gradio TTS</span><br>Designing Web / App Interfaces</li>
+              <li><span>Game Development</span><br>Designing Web / App Interfaces</li>
+              <li><span>Video Making</span><br>Designing Web / jhdfagajhfgb </li>
+            </ul>
+        </div>
+        <!-- Terzo tab -->
+        <div class="tab-contents" data-content="bike">
+          <div style="text-align: center;">
+            <iframe 
+                src="https://playcanv.as/p/WNQ27RBN/" 
+                width="800" 
+                height="500" 
+                title="Playcanvas"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+            </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Esempio di modello 3D ispezionabile con Playcanvas.</p> 
+        
+          <br><br>
+              <p>
+                Ho frequentato il <b>Liceo Scientifico Tecnologico ITIS Giua</b>, dove ho iniziato ad approcciarmi alla programmazione, al disegno tecnico e alla grafica digitale.
+                Successivamente, ho approfondito autonomamente lo studio delle arti grafiche digitali, avvicinandomi al mondo del 3D
+                tramite <b>fotogrammetria, modellazione, texturing e animazione.</b></p>
+              <p>
+                Dopo aver completato un corso come Tecnico di Rilievo 3D, ho imparato a utilizzare software fotogrammetrici come <b>Agisoft
+                Metashape</b> e <b>3DF Zephyr</b> per la creazione di <b>modelli 3D</b> e <b>rilievi del territorio</b>. In parallelo, ho iniziato a studiare <b>Blender</b>,
+                focalizzandomi sulla <b>modellazione 3D</b> con particolare attenzione all'<b>ArchViz</b> e alla creazione di modelli ottimizzati per la
+                visualizzazione in <b>real-time.</b></p> 
+            </p>
+            <ul>
+              <li><span>Gradio TTS</span><br>Designing Web / App Interfaces</li>
+              <li><span>Game Development</span><br>Designing Web / App Interfaces</li>
+              <li><span>Video Making</span><br>Designing Web / jhdfagajhfgb </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Fine prima sezione -->
+    <!-- Inizio seconda sezione -->
+    <section.1 class="main-content">
+      <section id="games">
+        <h2><i class="ri-briefcase-fill"></i>Playcanvas Scenes</h2>
+        <p>
+        <div class="tab-wrapper tab-wrapper-games"> 
+          <!-- Inizio tabella dinamica 1-->
+          <div class="tab-titles">
+              <p class="tab-links active-link" data-tab="tre">Web VR</p>
+              <p class="tab-links" data-tab="quattro">Game</p>
+          </div>
+          <!-- Primo tab -->
+          <div class="tab-contents active-tab" data-content="tre">
+            <div style="text-align: center;">
+                <iframe 
+                  src="https://playcanv.as/p/sAsiDvtC/" 
+                  width="800" 
+                  height="500" 
+                  title="Playcanvas"
+                  style="border:1px solid #ccc;"
+                  loading="lazy">
+                </iframe>
+            </div>
+            <br>
+            <p style="text-align: center;">Esempio di un gioco Web VR.</p>
+                <br><br>
+                <p>
+                  Ho frequentato il <b>Liceo Scientifico Tecnologico ITIS Giua</b>, dove ho iniziato ad approcciarmi alla programmazione, al disegno tecnico e alla grafica digitale.
+                  Successivamente, ho approfondito autonomamente lo studio delle arti grafiche digitali, avvicinandomi al mondo del 3D
+                  tramite <b>fotogrammetria, modellazione, texturing e animazione.</b></p>
+                <p>
+                  Dopo aver completato un corso come Tecnico di Rilievo 3D, ho imparato a utilizzare software fotogrammetrici come <b>Agisoft
+                  Metashape</b> e <b>3DF Zephyr</b> per la creazione di <b>modelli 3D</b> e <b>rilievi del territorio</b>. In parallelo, ho iniziato a studiare <b>Blender</b>,
+                  focalizzandomi sulla <b>modellazione 3D</b> con particolare attenzione all'<b>ArchViz</b> e alla creazione di modelli ottimizzati per la
+                  visualizzazione in <b>real-time.</b></p> 
+              </p>
+              <ul>
+                <li><span>Gradio Chatbot</span><br>Designing Web / App Interfaces</li>
+                <li><span>Game Development</span><br>Designing Web / App Interfaces</li>
+                <li><span>Video Making</span><br>Designing Web / jhdfagajhfgb </li>
+              </ul>
+          </div>
+          <!-- Secondo tab -->
+          <div class="tab-contents" data-content="quattro">
+            <div style="text-align: center;">
+              <iframe 
+                  src="https://playcanv.as/p/YopjEuFZ/" 
+                  width="800" 
+                  height="500" 
+                  title="Playcanvas"
+                  style="border:1px solid #ccc;"
+                  loading="lazy">
+              </iframe>
+            </div>
+            <br>
+            <p style="text-align: center;">Esempio di un gioco web implementato con Playcanvas.</p> 
+          
+            <br><br>
+                <p>
+                  Ho frequentato il <b>Liceo Scientifico Tecnologico ITIS Giua</b>, dove ho iniziato ad approcciarmi alla programmazione, al disegno tecnico e alla grafica digitale.
+                  Successivamente, ho approfondito autonomamente lo studio delle arti grafiche digitali, avvicinandomi al mondo del 3D
+                  tramite <b>fotogrammetria, modellazione, texturing e animazione.</b></p>
+                <p>
+                  Dopo aver completato un corso come Tecnico di Rilievo 3D, ho imparato a utilizzare software fotogrammetrici come <b>Agisoft
+                  Metashape</b> e <b>3DF Zephyr</b> per la creazione di <b>modelli 3D</b> e <b>rilievi del territorio</b>. In parallelo, ho iniziato a studiare <b>Blender</b>,
+                  focalizzandomi sulla <b>modellazione 3D</b> con particolare attenzione all'<b>ArchViz</b> e alla creazione di modelli ottimizzati per la
+                  visualizzazione in <b>real-time.</b></p> 
+              </p>
+              <ul>
+                <li><span>Gradio TTS</span><br>Designing Web / App Interfaces</li>
+                <li><span>Game Development</span><br>Designing Web / App Interfaces</li>
+                <li><span>Video Making</span><br>Designing Web / jhdfagajhfgb </li>
+              </ul>
+          </div>
+        </div>  
+    </section>
+    <!-- Fine seconda sezione -->
+    
+    <!-- Playcanvas 3-->
+    <section id="GaussianSplat" class="competenze">
+      <h2><i class="ri-code-line"></i>Gaussian Splat</h2>
+        <div style="text-align: center;">
+          <iframe 
+            src="https://playcanv.as/p/cLkf99ZV/" 
+            width="800" 
+            height="500" 
+            title="Playcanvas"
+            style="border:1px solid #ccc;"
+            loading="lazy">
+          </iframe>
+        </div>
+      <br>
+      <p style="text-align: center;">Esempio Gaussian Splatting su Playcanvas.</p>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <button onclick="window.location.href='../index.html'">
+          <i class="ri-home-line"></i> Home
+        </button>
+      </div>
+      <br><br><br>
+    </footer>
+
+    <!-- Script sezioni dinamiche -->
+    <script>
+      // Script delle sezioni dinamiche
+      document.querySelectorAll('.tab-wrapper').forEach(wrapper => {
+        const tabLinks = wrapper.querySelectorAll('.tab-links');
+        const tabContents = wrapper.querySelectorAll('.tab-contents');
+      
+        tabLinks.forEach(link => {
+          link.addEventListener('click', function () {
+            const tabName = this.getAttribute('data-tab');
+      
+            // Rimuovi classi attive
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            tabContents.forEach(content => content.classList.remove('active-tab'));
+      
+            // Aggiungi classi attive al clic
+            this.classList.add('active-link');
+            wrapper.querySelector(`.tab-contents[data-content="${tabName}"]`).classList.add('active-tab');
+          });
+        });
+      });
+    </script>
+    <!-- Carichiamo lo script JavaScript che gestisce il form di contatto -->
+    <script src="index.js"></script>
+</body>
+
+</html>

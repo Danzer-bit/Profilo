@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae di Alexandro Meloni</title>
+  <!-- Carichiamo un font esterno -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Carichiamo una libreria di icone -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Foglio di stile CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="profile-container">
+      <div>
+        <!-- Bottone inferiore con colore solido (non trasparente) -->
+        <button class="home-button-bottom" onclick="window.location.href='../Homepage.html'">
+        <i class="ri-home-line"></i> Home
+        </button>
+
+        <!-- Bottone superiore con effetto glass -->
+        <button class="home-button-glass-animated" onclick="window.location.href='../Homepage.html'">
+          <i class="ri-home-line"></i> Home
+        </button>
+      </div>
+      <h1>Portfolio Alexandro Meloni</h1>
+      <p>Software Developer - 3D Artist </p>
+      <div id="contact-info">
+        <a href="mailto:alex93.m@email.com">
+          <p><i class="ri-mail-line"></i> alex93.m@email.com </p>
+        </a>
+        <p><i class="ri-phone-line"></i> +39 351 556 5509</p>
+        <p><i class="ri-map-pin-line"></i> Cagliari, Italia</p>
+      </div>
+    </div>
+
+    
+  </header>
+
+  <main class="container-flex">
+    <!-- Sidebar -->
+    <section class="right-sidebar">
+      <h3><i class="ri-list-check"></i>  <b style="color: black;; font-size: 26px;">Link utili:</b></h3>
+      <ul>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Portfolio Gallery</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Animation Showreel</a></span> <br> <i style="margin-left: 8px;">Video montage delle animazioni</i> <br> <i style="margin-left: 8px;">renderizzate con Blender.</i> </li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> CV Europass</a></span> <br> <i style="margin-left: 8px;">Scarica il mio CV Europass aggiornato.</i></li>
+        <p><br></p>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Sketchfab viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Custom Babilon.Js viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Custom Playcanva viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Gradio viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <p><br></p>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Sito web Team di sviluppo - Hololizard <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Unity Games <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Unreal Engine 5 Games <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+        <li><span><a class= "sidebar-link" href= "../index.html"> Pubblicazioni <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+      </ul>
+    </section>
+
+    <!-- Contenuto principale -->
+    <!-- Inizio prima sezione -->
+    <section.1 class="main-content">
+      <section id="viewer">
+        <h2><i class="ri-briefcase-fill"></i>Gaussian Splatting</h2>
+        <p>
+        <div class="tab-wrapper tab-wrapper-viewer"> 
+        <!-- Inizio tabella dinamica 1-->
+        <div class="tab-titles">
+            <p class="tab-links active-link" data-tab="one">Example 1</p>
+            <p class="tab-links" data-tab="two">Example 2</p>
+            <p class="tab-links" data-tab="bike">Photogrammetry comparison</p>
+        </div>
+        <!-- Primo tab -->
+        <div class="tab-contents active-tab" data-content="one">
+          <div style="text-align: center;">
+              <iframe 
+                src="https://scaniverse.com/scan/spta6mp4e33han4w?embed=1" 
+                width="800" 
+                height="500" 
+                title="Playcanvas"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+              </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Esempio di Gaussian Splat con Scaniverse.</p>
+              <br><br>
+              <h1>Cos'è il Gaussian Splatting?</h1>
+                <p>
+                  Il <strong>Gaussian Splatting</strong> è una tecnica di rendering 3D che rappresenta una scena utilizzando una collezione di <em>Gaussiane 3D</em> anisotrope distribuite nello spazio. Ogni Gaussiana ha una posizione, orientamento, colore e opacità, permettendo una rappresentazione continua e fotorealistica di oggetti complessi e scene reali, senza bisogno di mesh tradizionali.
+                </p>
+
+                <h2>Somiglianze e differenze con le nuvole di punti</h2>
+                <p>
+                  Le <strong>nuvole di punti</strong> sono insiemi di punti 3D acquisiti da scanner o ricostruzioni. Ogni punto rappresenta una posizione nello spazio, a volte con colore.
+                </p>
+                <ul>
+                  <li><strong>Somiglianze:</strong> Entrambi rappresentano una scena come insiemi discreti nello spazio 3D.</li>
+                  <li><strong>Differenze:</strong> I punti in una nuvola non hanno forma o volume. Le Gaussiane invece hanno distribuzioni volumetriche e proprietà visive che migliorano il rendering.</li>
+                </ul>
+
+                <h2>Confronto con la fotogrammetria</h2>
+                <p>
+                  La <strong>fotogrammetria</strong> ricostruisce modelli 3D da immagini multiple, generando spesso mesh testurizzate.
+                </p>
+                <ul>
+                  <li><strong>Somiglianze:</strong> Entrambe le tecniche usano fotografie per ricostruire la geometria della scena.</li>
+                  <li><strong>Differenze:</strong> La fotogrammetria richiede un processo complesso di meshing e texturing. Il Gaussian Splatting evita le mesh, offrendo maggiore continuità e meno artefatti visivi.</li>
+                </ul>
+
+                <h2>Vantaggi del Gaussian Splatting</h2>
+                <ul>
+                  <li><strong>Qualità visiva superiore:</strong> Riproduce dettagli fini e sfocature realistiche grazie alla natura volumetrica delle Gaussiane.</li>
+                  <li><strong>Rendering in tempo reale:</strong> Con GPU moderne, permette visualizzazione interattiva ad alta fedeltà.</li>
+                  <li><strong>Materiali complessi:</strong> Supera alcuni limiti della fotogrammetria e riesce ad elaborare superfici e materiali complessi con riflessi e trasparenze (metalli lucidi, vetri, acqua etc.).</li>
+                  <li><strong>Pipeline più semplice:</strong> Elimina la necessità di mesh complesse e processi di texturizzazione.</li>
+                  <li><strong>Continuità visiva:</strong> Evita discontinuità nei bordi e nei dettagli rispetto a mesh triangolate.</li>
+                  <li><strong>Flessibilità:</strong> Si integra facilmente con tecniche neurali come NeRF per scene dinamiche o deformabili.</li>
+                </ul>
+
+                <p>
+                  In sintesi, il Gaussian Splatting rappresenta una delle evoluzioni più promettenti nella visualizzazione 3D realistica, combinando efficienza e qualità visiva.
+                </p>
+        </div>
+        <!-- Secondo tab -->
+        <div class="tab-contents" data-content="two">
+          <div style="text-align: center;">
+            <iframe 
+                src="https://scaniverse.com/scan/vhb65ffyuoyg6d5z?embed=1" 
+                width="800" 
+                height="500" 
+                title="Playcanvas"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+            </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Esempio di Gaussian Splat con Scaniverse.</p> 
+        
+          <br><br>
+              <h1>Cos'è il Gaussian Splatting?</h1>
+              <p>
+                Il <strong>Gaussian Splatting</strong> è una tecnica di rendering 3D che rappresenta una scena utilizzando una collezione di <em>Gaussiane 3D</em> anisotrope distribuite nello spazio. Ogni Gaussiana ha una posizione, orientamento, colore e opacità, permettendo una rappresentazione continua e fotorealistica di oggetti complessi e scene reali, senza bisogno di mesh tradizionali.
+              </p>
+
+              <h2>Somiglianze e differenze con le nuvole di punti</h2>
+              <p>
+                Le <strong>nuvole di punti</strong> sono insiemi di punti 3D acquisiti da scanner o ricostruzioni. Ogni punto rappresenta una posizione nello spazio, a volte con colore.
+              </p>
+              <ul>
+                <li><strong>Somiglianze:</strong> Entrambi rappresentano una scena come insiemi discreti nello spazio 3D.</li>
+                <li><strong>Differenze:</strong> I punti in una nuvola non hanno forma o volume. Le Gaussiane invece hanno distribuzioni volumetriche e proprietà visive che migliorano il rendering.</li>
+              </ul>
+
+              <h2>Confronto con la fotogrammetria</h2>
+              <p>
+                La <strong>fotogrammetria</strong> ricostruisce modelli 3D da immagini multiple, generando spesso mesh testurizzate.
+              </p>
+              <ul>
+                <li><strong>Somiglianze:</strong> Entrambe le tecniche usano fotografie per ricostruire la geometria della scena.</li>
+                <li><strong>Differenze:</strong> La fotogrammetria richiede un processo complesso di meshing e texturing. Il Gaussian Splatting evita le mesh, offrendo maggiore continuità e meno artefatti visivi.</li>
+              </ul>
+
+              <h2>Vantaggi del Gaussian Splatting</h2>
+              <ul>
+                <li><strong>Qualità visiva superiore:</strong> Riproduce dettagli fini e sfocature realistiche grazie alla natura volumetrica delle Gaussiane.</li>
+                <li><strong>Rendering in tempo reale:</strong> Con GPU moderne, permette visualizzazione interattiva ad alta fedeltà.</li>
+                <li><strong>Materiali complessi:</strong> Supera alcuni limiti della fotogrammetria e riesce ad elaborare superfici e materiali complessi con riflessi e trasparenze (metalli lucidi, vetri, acqua etc.).</li>
+                <li><strong>Pipeline più semplice:</strong> Elimina la necessità di mesh complesse e processi di texturizzazione.</li>
+                <li><strong>Continuità visiva:</strong> Evita discontinuità nei bordi e nei dettagli rispetto a mesh triangolate.</li>
+                <li><strong>Flessibilità:</strong> Si integra facilmente con tecniche neurali come NeRF per scene dinamiche o deformabili.</li>
+              </ul>
+
+              <p>
+                In sintesi, il Gaussian Splatting rappresenta una delle evoluzioni più promettenti nella visualizzazione 3D realistica, combinando efficienza e qualità visiva.
+              </p>
+        </div>
+        <!-- Terzo tab -->
+        <div class="tab-contents" data-content="bike">
+          <div style="text-align: center;">
+            <iframe 
+                src="https://scaniverse.com/scan/jjgwhrud3uu4wrio?embed=1" 
+                width="800" 
+                height="500" 
+                title="Playcanvas"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+            </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Esempio di modello fotogrammetrico con Scanniverse.</p> 
+        
+          <br><br>
+              <h1>Fotogrammetria per Modelli 3D</h1>
+              <p>
+                La <strong>fotogrammetria</strong> è una tecnica che consente di ricostruire oggetti e ambienti tridimensionali partendo da fotografie scattate da diverse angolazioni. Utilizzando algoritmi di visione artificiale, viene calcolata la posizione relativa delle fotocamere e la struttura spaziale della scena, generando un modello 3D denso sotto forma di mesh texturizzata.
+              </p>
+            
+              <h2>Come funziona la fotogrammetria 3D</h2>
+              <ul>
+                <li>Acquisizione di immagini da diverse prospettive (con una fotocamera o drone).</li>
+                <li>Identificazione e tracciamento di feature comuni tra le immagini <b>(Feature Points)</b>.</li>
+                <li>Calcolo della posizione 3D di ogni punto visibile tramite triangolazione.</li>
+                <li>Ricostruzione di una <em>mesh</em> e successiva applicazione delle texture.</li>
+              </ul>
+            
+              <h2>Confronto con il Gaussian Splatting</h2>
+              <p>
+                Mentre la fotogrammetria si basa su geometria esplicita (mesh), il <strong>Gaussian Splatting</strong> utilizza un approccio diverso, basato su entità volumetriche che rappresentano punti nello spazio con forma e colore.
+              </p>
+              <ul>
+                <li><strong>Geometria:</strong> La fotogrammetria genera mesh triangolari; il Gaussian Splatting usa Gaussiane 3D distribuite nello spazio.</li>
+                <li><strong>Texturing:</strong> La fotogrammetria mappa texture sulle superfici; nel Gaussian Splatting il colore è parte della rappresentazione volumetrica.</li>
+                <li><strong>Realismo:</strong> Il Gaussian Splatting può produrre effetti visivi più morbidi e realistici, soprattutto in presenza di trasparenze, bordi sfumati e materiali complessi.</li>
+                <li><strong>Pipeline:</strong> La fotogrammetria richiede vari passaggi (matching, mesh, texture); il Gaussian Splatting può saltare alcuni di questi grazie alla sua rappresentazione nativa.</li>
+                <li><strong>Rendering:</strong> Il Gaussian Splatting è più adatto a rendering fotorealistici in tempo reale, mentre la fotogrammetria può risultare più pesante per la GPU se la mesh è complessa.</li>
+              </ul>
+            
+              <h2>Quando usare una o l'altra?</h2>
+              <ul>
+                <li><strong>Fotogrammetria:</strong> Ideale per applicazioni tecniche, CAD, conservazione dei beni culturali, e quando è necessario un modello mesh compatibile con software tradizionali.</li>
+                <li><strong>Gaussian Splatting:</strong> Perfetto per visualizzazioni fotorealistiche, VR/AR e ricostruzioni dinamiche o neurali.</li>
+              </ul>
+            
+              <p>
+                In conclusione, la scelta tra fotogrammetria e Gaussian Splatting dipende dallo scopo finale: precisione geometrica e compatibilità da un lato, qualità visiva e flessibilità dall'altro.
+              </p>
+        </div>
+    </section>
+    <!-- Fine prima sezione -->
+    <!-- Inizio seconda sezione -->
+    <section.1 class="main-content">
+      <section id="games">
+        <h2><i class="ri-briefcase-fill"></i>Custom Gaussian Visualization</h2>
+        <p>
+        <div class="tab-wrapper tab-wrapper-games"> 
+          <!-- Inizio tabella dinamica 1-->
+          <div class="tab-titles">
+              <p class="tab-links active-link" data-tab="tre">Playcanvas Gaussian Viewer</p>
+              <p class="tab-links" data-tab="quattro">BabylonJs Gaussian Viewer</p>
+          </div>
+          <!-- Primo tab -->
+          <div class="tab-contents active-tab" data-content="tre">
+            <div style="text-align: center;">
+                <iframe 
+                  src="https://danzer-bit.github.io/Playcanvas_Model_Viewer/" 
+                  class="custom-model-viewer"
+                  width="800" 
+                  height="500" 
+                  title="Playcanvas"
+                  style="border:1px solid #ccc;"
+                  loading="lazy">
+                </iframe>
+            </div>
+            <br>
+            <p style="text-align: center;">Playcanvas custom model viewer.</p>
+                <br><br>
+                  <h1>Model Viewer di PlayCanvas</h1>
+                  <p>
+                    Il <strong>Model Viewer</strong> di <a href="https://playcanvas.com/" target="_blank">PlayCanvas</a> è uno strumento basato su WebGL che consente di visualizzare e interagire con modelli 3D direttamente all'interno del browser, senza bisogno di installare nulla.
+                  </p>
+                
+                  <p>
+                    Grazie alla potenza del motore PlayCanvas, il visualizzatore supporta materiali PBR (Physically Based Rendering), illuminazione dinamica, ambient occlusion, animazioni e molto altro, offrendo un'esperienza di ispezione del modello fluida e realistica.
+                  </p>
+                
+                  <p>
+                    È particolarmente utile per sviluppatori, artisti 3D e chi lavora nel settore del design o dell'e-commerce, in quanto permette di condividere anteprime interattive di modelli 3D con un semplice link.
+                  </p>
+                
+                  
+
+                <p>
+                  Puoi usare i seguenti link per testare vari modelli: <br>
+                  
+                </p> 
+              </p>
+              <ul>
+                <li><b>Gargoyle:</b><pre><code>https://danzer-bit.github.io/ModelLibrary/Gargoyle.ply</code></pre></li>
+                <li><b>Gufo:</b><pre><code>https://danzer-bit.github.io/ModelLibrary/GufoWood.ply</code></pre></li>
+                <li><b>Megaball:</b><pre><code>https://danzer-bit.github.io/ModelLibrary/Megaball.ply</code></pre></li>
+                <li><b>Snes:</b><pre><code>https://danzer-bit.github.io/ModelLibrary/Snes.compressed.ply</code></pre></li>
+                <li><b>Statuina:</b><pre><code>https://danzer-bit.github.io/ModelLibrary/ZeldaStatue.ply</code></pre></li>
+              </ul>
+              <br><br>
+              <p>
+                Oppure puoi provare la versione originale del Model Viewer direttamente dal sito ufficiale:  
+                <a href="https://playcanvas.com/project/547341/overview/model-viewer" target="_blank">PlayCanvas Model Viewer</a>
+              </p>
+          </div>
+          <!-- Secondo tab -->
+          <div class="tab-contents" data-content="quattro">
+            <div style="text-align: center;">
+              <iframe 
+                  src="https://sandbox.babylonjs.com/" 
+                  width="800" 
+                  height="500" 
+                  title="Playcanvas"
+                  style="border:1px solid #ccc;"
+                  loading="lazy">
+              </iframe>
+            </div>
+            <br>
+            <p style="text-align: center;"><b>Babylon Standard Viewer.</b></p> 
+          
+            <br><br>
+                <p>
+                  Il <strong>Babylon.js Standard Viewer</strong> è un visualizzatore 3D web-based che consente di incorporare modelli tridimensionali in una pagina HTML con estrema facilità. Basato sul potente motore Babylon.js, supporta rendering avanzato in tempo reale, illuminazione PBR, animazioni, controlli di interazione e molto altro.
+                </p>
+              
+                <h2>Formati 3D supportati</h2>
+                <p>
+                  Il viewer è compatibile con i principali formati 3D, tra cui:
+                </p>
+                <ul>
+                  <li><strong>.glTF / .glb</strong> (formato consigliato): moderno, efficiente, con supporto per materiali PBR, animazioni, morph targets e scene complete.</li>
+                  <li><strong>.obj + .mtl</strong>: formati classici, semplici, ma senza supporto nativo per materiali avanzati.</li>
+                  <li><strong>.babylon</strong>: formato nativo del motore, completamente compatibile con tutte le funzionalità di Babylon.js.</li>
+                  <li><strong>.stl</strong>: spesso usato per modelli CAD o stampa 3D.</li>
+                </ul>
+              
+                <h2>Integrazione con modelli Gaussian Splat</h2>
+                <p>
+                  Attualmente grazie a Babylon.js è possibile integrare dei modelli <strong>Gaussian Splatting</strong> all'interno dei Viewer in diversi formati.
+                </p>
+                <h2>Formati 3D supportati</h2>
+                <p>
+                  
+                  <ul>
+                    <li><strong>.PLY</strong>. </li>
+                    <li><strong>.splat</strong>: una versione serializzata dei dati .PLY in Javascript.</li>
+                    <li><strong>.spz</strong>: formato proprietario di Niantic Labs.</li>
+                  </ul>
+                   
+                </p>
+              
+          </div>
+        </div>  
+    </section>
+    <!-- Fine seconda sezione -->
+    
+    <!-- Playcanvas 3-->
+    <section id="GaussianSplat" class="competenze">
+      <h2><i class="ri-code-line"></i>Gaussian Splat</h2>
+        <div style="text-align: center;">
+          <iframe 
+            src="https://playcanv.as/p/cLkf99ZV/" 
+            width="800" 
+            height="500" 
+            title="Playcanvas"
+            style="border:1px solid #ccc;"
+            loading="lazy">
+          </iframe>
+        </div>
+      <br>
+      
+      <p style="text-align: center;">Credits: Splats scanned at the <a href="https://www.vam.ac.uk/" target="_blank" rel="noopener noreferrer">V&A Museum</a>. HDRI from <a href="https://polyhaven.com/a/sepulchral_chapel_rotunda" target="_blank" rel="noopener noreferrer">Poly Haven</a>.</p> 
+      <br>
+      <p style="text-align: center;">Esempio di WebApp con varie riproduzioni di Gaussian Splatting su Playcanvas.</p>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <button onclick="window.location.href='../index.html'">
+          <i class="ri-home-line"></i> Home
+        </button>
+      </div>
+      <br><br><br>
+    </footer>
+
+    <!-- Script sezioni dinamiche -->
+    <script>
+      // Script delle sezioni dinamiche
+      document.querySelectorAll('.tab-wrapper').forEach(wrapper => {
+        const tabLinks = wrapper.querySelectorAll('.tab-links');
+        const tabContents = wrapper.querySelectorAll('.tab-contents');
+      
+        tabLinks.forEach(link => {
+          link.addEventListener('click', function () {
+            const tabName = this.getAttribute('data-tab');
+      
+            // Rimuovi classi attive
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            tabContents.forEach(content => content.classList.remove('active-tab'));
+      
+            // Aggiungi classi attive al clic
+            this.classList.add('active-link');
+            wrapper.querySelector(`.tab-contents[data-content="${tabName}"]`).classList.add('active-tab');
+          });
+        });
+      });
+    </script>
+    <!-- Carichiamo lo script JavaScript che gestisce il form di contatto -->
+    <script src="index.js"></script>
+</body>
+
+</html>

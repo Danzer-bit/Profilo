@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae di Alexandro Meloni</title>
+    <!-- Carico un font esterno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Carico una libreria di icone -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Foglio di stile CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Header con l'avatar e le mie info -->
+    <header>
+      <div id="profile-container" id="top">
+        
+        <img src="../assets/img/foto_profilo1.jpg" alt="Alexandro Meloni" class="profile-image">
+        <h1>Portfolio Alexandro Meloni</h1>
+        <p>Software Developer - 3D Artist </p>
+        <div id="contact-info">
+          <a href="mailto:alex93.m@email.com">
+            <p><i class="ri-mail-line"></i> alex93.m@email.com </p>
+          </a>
+          <p><i class="ri-phone-line"></i> +39 351 556 5509</p>
+          <p><i class="ri-map-pin-line"></i> Cagliari, Italia</p>
+        </div>
+      </div>
+
+      
+    </header>
+
+    <main class="container-flex">
+      <!-- Sidebar -->
+      <section class="right-sidebar">
+        <h3><i class="ri-list-check"></i>  <b style="color: black;; font-size: 26px;">Link utili:</b></h3>
+        <ul>
+          <li><span><a class= "sidebar-link" href= "https://danzer-bit.github.io/Portfolio2025/" target="_blank"> Portfolio Gallery</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
+          <li><span><a class= "sidebar-link" href= "Projects/Videoshowreel.html"> Animation Showreel</a></span> <br> <i style="margin-left: 8px;">Video montage delle animazioni</i> <br> <i style="margin-left: 8px;">renderizzate con Blender.</i> </li>
+          <li><span><a class= "sidebar-link" href= "assets/cv/cv_alex_2025.pdf" download> CV Europass</a></span> <br> <i style="margin-left: 8px;">Scarica il mio CV Europass aggiornato.</i></li>
+          <p><br></p>
+          <li><span><a class= "sidebar-link" href= "Projects/Sketchfab.html"> Fotogrammetria - Sketchfab</a></span> <br> <i style="margin-left: 8px;">Alcuni modelli fotogrammetrici </i><br><i style="margin-left: 8px;">implementati con Sketchfab.</i></li>
+          <li><span><a class= "sidebar-link" href= "Projects/BabylonJs.html"> Visualizzatore 3D - Babylon.Js</a></span> <br> <i style="margin-left: 8px;">Implementazione di una scena BabylonJs </i><br><i style="margin-left: 8px;">per visualizzare modelli 3D.</i></li>
+          <li><span><a class= "sidebar-link" href= "Projects/Playcanvas.html"> Visualizzatore 3D - Playcanvas</a></span> <br> <i style="margin-left: 8px;">Implementazione di una scena Playcanvas</i><br><i style="margin-left: 8px;">per visualizzare modelli 3D e giochi.</i></li>
+          <!--<li><span><a class= "sidebar-link" href= "Projects/Playcanvas.html#GaussianSplat"> Gaussian Splatting - Playcanvas</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>-->
+          <li><span><a class= "sidebar-link" href= "Projects/Gaussian.html"> Gaussian Splatting</a></span> <br> <i style="margin-left: 8px;">Varie visualizzazioni di modelli Gaussian Splat </i><br><i style="margin-left: 8px;">tramite Scaniverse, Playcanvas e BabylonJs.</i></li>
+          <li><span><a class= "sidebar-link" href= "Projects/WebGames.html"> Web Games </a></span> <br> <i style="margin-left: 8px;">Implementazione di giochi Web</i><br><i style="margin-left: 8px;">tramite Itch.Io e Simmer.Io.</i></li>
+          <li><span><a class= "sidebar-link" href= "Projects/Gradio.html"> Web Apps - Gradio</a></span> <br> <i style="margin-left: 8px;">Implementazione di AI Web App</i><br><i style="margin-left: 8px;">tramite Gradio.</i></li>
+          <p><br></p>
+          <li><span><a class= "sidebar-link" href= "https://www.hololizard.com/" target="_blank"> Sito web - Hololizard </a></span> <br> <i style="margin-left: 8px;">Sito Web del Team di sviluppo Hololizard</i><br><i style="margin-left: 8px;">che mostra alcune pubblicazioni recenti.</i></li>
+          <li><span><a class= "sidebar-link" href= "Wip.html"> Pubblicazioni <i>(in costruzione)</i></a></span> <br> <i style="margin-left: 8px;">Lista e info delle mie pubblicazioni.</i></li>
+          <li><span><a class= "sidebar-link" href= "Wip.html"> Metaverso <i>(in costruzione)</i></a></span> <br> <i style="margin-left: 8px;">I miei lavori che hanno a che</i><br><i style="margin-left: 8px;">fare con il Metaverso e la VR.</i></li>
+          <li><span><a class= "sidebar-link" href= "Wip.html"> Unity Games <i>(in costruzione)</i></a></span> <br> <i style="margin-left: 8px;">Alcuni esempi di giochi </i><br><i style="margin-left: 8px;">sviluppati su Unity.</i></li>
+          <li><span><a class= "sidebar-link" href= "Projects/ProveVarie.html"> Unreal Engine 5 Games <i>(in corstruzione)</i></a></span> <br> <i style="margin-left: 8px;">Alcuni esempi di giochi e software</i><br><i style="margin-left: 8px;">sviluppati con Unreal Engine.</i></li>
+        </ul>
+      </section>
+
+      <!-- Contenuto principale -->
+      <section.1 class="main-content">
+        <section id="riepilogo">
+          <h2><i class="ri-user-line"></i>Presentazione personale</h2>
+          <p>
+          <ul>  
+            <li> 
+            <p>
+             
+              Sono un <strong>3D Artist</strong> con esperienza sia formativa che professionale nella modellazione, nel texturing, nell'animazione e nel rendering 3D, con un forte interesse per la fotogrammetria 
+              e le tecnologie emergenti legate alla visualizzazione 3D. Il mio workflow principale si basa su software di modellazione poligonale come <strong>3D Studio Max</strong> e <strong>Blender</strong>,
+               ma ho maturato esperienza anche in ambienti CAD come <strong>AutoCAD</strong>, <strong>SketchUp</strong> e <strong>Rhinoceros</strong>.
+            </p>
+          
+            <p>
+              Nel campo della fotogrammetria e della gestione di nuvole di punti, mi affido a tool come <strong>Agisoft Metashape</strong>, <strong>3DF Zephyr</strong>, <strong>CloudCompare</strong> e <strong>PostShot</strong>,
+               che mi permettono di creare scansioni e modelli 3D altamente dettagliati ma ottimizzati per la visualizzazione real time e web (Remeshing, Retopology, Baking). Ho anche approfondito l’uso di tecniche similari come il 
+               <strong>Gaussian Splatting</strong>, una tecnologia che sta recentemente acquisendo popolarità nel campo della visualizzazione 3D.
+            <p>
+            
+            </li>
+            <li> 
+            <p>
+              Parallelamente, sono anche un <strong>Game Designer e sviluppatore software</strong>, con una buona esperienza nello sviluppo di giochi e applicazioni sia mobile che desktop, principalmente con <strong>Unity</strong> 
+              e <strong>C#</strong>. Ho esplorato anche altri engine e framework come <strong>Unreal Engine</strong>, <strong>Godot</strong> e <strong>Pygame</strong>, oltre a soluzioni web-based per la grafica 3D interattiva, 
+              come <strong>Babylon.js</strong>, <strong>Three.js</strong> e <strong>PlayCanvas</strong>. 
+            </li> 
+            <li>  
+            <p>
+              Negli ultimi anni ho ampliato le mie competenze nel settore della <strong>Realtà Virtuale, Aumentata e Mista (VR/AR/XR)</strong>, sviluppando progetti che spaziano dalla visualizzazione immersiva di ambienti 
+              ricostruiti digitalmente (Digital Twin), all’integrazione di elementi interattivi in scenari reali. Ho lavorato con tecnologie come <strong>Vuforia</strong>, <strong>AR Foundation</strong>, e anche con soluzioni web e mobile 
+              per la fruizione di asset 3D fotogrammetrici e nuvole di punti, sfruttando <strong>Babylon.js</strong>, <strong>PlayCanvas</strong> e <strong>Scaniverse</strong>.
+            </p>
+            </li>
+            <li> 
+            <p>
+              Recentemente mi sto dedicando anche allo studio dell’<strong>Intelligenza Artificiale Generativa</strong> e del <strong>Machine Learning</strong>, in particolare all’implementazione di <strong>modelli linguistici (LLM)</strong> 
+              come <strong>LLaMA</strong>, <strong>Gemma</strong>, <strong>Qwen</strong> e <strong>DeepSeek</strong>. Utilizzo <strong>Python</strong> e <strong>Ollama</strong> come base per i miei esperimenti e sviluppo <strong>web app
+                 AI interattive</strong> con librerie come <strong>Gradio</strong>, per integrare modelli in interfacce dinamiche.
+            </p>
+            </li>
+          </ul>
+          </p>
+        </section>
+      <!-- Esperienza lavorativa -->  
+      <section.1 class="main-content">
+        <section id="lavoro">
+          <p>
+
+            <div class="tab-wrapper tab-wrapper-lavoro">
+              <h2><i class="ri-briefcase-fill"></i>Esperienza Lavorativa</h2>
+            
+              <div class="tab-titles">
+                <p class="tab-links active-link" data-tab="jobs">Modellatore 3D</p>
+                <p class="tab-links" data-tab="education">Game Developer</p>
+                <p class="tab-links" data-tab="skills">Sviluppatore software</p>
+              </div>
+            
+              <div class="tab-contents active-tab" data-content="jobs">
+                <i>09/2020 - 06/2023 </i> <br>
+                <b>GRAFICO 3D - SVILUPPO AMBIENTI VIRTUALI</b> 
+                <i>| DEODATO.TECH SRL</i>
+                <ul>
+                  <li>
+                    <b>Task Principali:</b> <br>
+                  • Modellazione ed editing 3D. <br>
+                  • Creazione di materiali, shader e texture. <br>
+                  • Creazione di scene virtuali interattive per il web e sviluppo di esperienze nel metaverso. <br>
+                  • Ottimizzazione e implementazione di modelli per motori grafici real time. <br>
+                  </li>
+                  <li>
+                    <b>Progetti principali sviluppati:</b> <br>
+                  • Sviluppo su piattaforma LIEU.city. <br>
+                  • Mostra Virtuale - Banksy. The Brussels Show, una selezione delle opere dello street artist Banksy che dedica anche spazio
+                  al dialogo tra Banksy e altri due artisti: Blek le Rat e Mr. Brainwash. Curatore: Deodato Art Gallery. <br>
+                  • Mostra Virtuale - 3 Decades of dissent, evento dell'artista Shepard Fairey, riproduzione "Digital Twin" della mostra tenutasi
+                  al GAM di Roma. Curatore: Shepard Fairey. <br>
+                  • Mostra Virtuale - Leonardo da Vinci: Realtà virtuale dalla Gioconda al Metaverso, comprende uno spazio virtuale di ben
+                  5.000 mq in cui è possibile osservare e scoprire centinaia di reperti e opere d'arte realizzate da Leonardo da Vinci. Curatore:
+                  Mario Taddei - DaVinci Lab. <br>
+                  • Mostra Virtuale - Ecophilia, superando la visione del mondo antropocentrata, le opere proposte in Ecophilia sono sguardi
+                  alternativi e inconsueti di relazione con la montagna e la natura, che trovano spazio in questa riproduzione "Digital Twin"
+                  della mostra a cura di Andrea Lerda tenutasi al Museo Nazionale della Montagna. Curatore: Andrea Lerda. <br>
+                  • Mostra Virtuale - Booming - Contemporary Art Show, riproduzione "Digital Twin" degli spazi del binario centrale di
+                  DumBO, in questa seconda edizione della mostra dedicata agli artisti emergenti. Curatore: DOC Creativity.
+                </li>
+              </ul>
+              </div>
+
+
+              <div class="tab-contents" data-content="education">
+                <ul>
+                  <li>
+                  <i>05/2022 - 07/2023 Alghero, Italia</i> <br>
+                  <b>GAME DESIGNER - SVILUPPATORE SOFTWARE</b> 
+                  <i>| UNO SRL</i> <br>
+                  <b>Task principali:</b> <br>
+                  • Sviluppo di un videogame per la <b>promozione dell'<a href="https://fertiliafiles.fertilia.org/" target="_blank">Ecomuseo Egea</a> di Fertilia</b>. <br>
+                  • Creazione ed editing modelli <b>3D ottimizzati</b> per l'engine. <br>
+                  • Sviluppo app iOS e Android con <b>Unity</b>. <br>
+                  • <b>Programmazione C#</b>. <br>
+                  </li>
+                  <a href="https://fertiliafiles.fertilia.org/" target="_blank"><i style="margin-left: 26px;">Link al progetto</i></a>
+                  <br>
+
+
+                  <li>
+                  <i>07/2021 - 01/2023 Cagliari, Italia</i> <br>
+                  <b>GAME DESIGNER - SVILUPPATORE SOFTWARE</b> 
+                  <i>| FONDAZIONE ISI</i> <br>
+                  <b>Task Principali:</b> <br>
+                  • Sviluppo di un videogame mobile per la promozione del progetto TUR.I.S.I.CO. <br>
+                  • Creazione ed editing modelli 3D ottimizzati per l'engine. <br>
+                  • Sviluppo app iOS e Android con Unity.<br>
+                  • Programmazione C#. <br>
+                  </li>
+                  <i style="margin-left: 26px;">Link al </i><a href="https://www.fondazioneisi.org/news/441-progetto-turisico-il-game-vincitore-della-call-e-yummy-typical" target="_blank"><i>Progetto Turisico</i></a> <i>e al</i> <a href="https://www.yummytypical.it/" target="_blank"><i>Sito Web del Progetto Sviluppato.</i></a>
+                  <br>
+
+
+                  <li>
+                  <i>02/2021 - 06/2022 Alghero, Italia </i> <br>
+                  <b>GAME DESIGNER - SVILUPPATORE SOFTWARE</b> 
+                  <i>| FONDAZIONE ALGHERO</i> <br>
+                  <b>Task Principali:</b> <br>
+                  • Progettazione e sviluppo di un videogame per la promozione del progetto Med Gaims e dell'evento Play Alghero. <br>
+                  • Creazione ed editing modelli 3D ottimizzati per l'engine. <br>
+                  • Sviluppo app iOS e Android con Unity. <br>
+                  • Programmazione C#. <br>
+                  • Gestione eventi pubblici per la sponsorizzazione del progetto. <br>
+                  • Creazione di contenuti social per la pubblicizzazione del progetto. <br>
+                  </li>
+                  <i style="margin-left: 26px;">Link al </i><a href="https://playalghero.it/" target="_blank"><i>Progetto Play Alghero</i></a> <i>e al</i> <a href="https://playalghero.it/giochi/angelica-e-il-re-degli-algiroidi/" target="_blank"><i>Sito Web del Progetto Sviluppato.</i></a>
+                </ul>
+              </div>
+
+              <div class="tab-contents" data-content="skills">
+                <ul>
+                  <li>
+                    <i>2023 - 2024 Cagliari, Italia</i> <br>
+                    <b>MODELLATORE 3D - SVILUPPATORE SOFTWARE</b> 
+                    <i>| CREATIVE FACTORY</i> <br>
+                    
+                      Realizzazione di una demo dimostrativa per dispositivi mobile con le seguenti feature e funzionalità:<br>
+                      • Tracking GPS real time. <br>
+                      • UI/UX animate, complete e funzionanti. <br>
+                      • Player audio e video per la gestione di filmati e registrazioni audio. <br>
+                      • Mappa in 3D di una porzione interessata di Cagliari creata con tecniche miste di generazione automatica e modellazione manuale. <br>
+                      • Creazione e gestione delle scene in 3D, materiali, texture e luci. <br>
+                  </li>
+                </ul>  
+              </div>
+            </div>
+
+          </p>
+        </section>
+
+      <!-- Formazione -->
+      <section.1 class="main-content">
+        <section id="istruzione">
+            
+            <p> 
+              <div class="tab-wrapper tab-wrapper-istruzione">
+                <h2><i class="ri-book-open-line"></i>Formazione</h2>
+              
+                <div class="tab-titles">
+                  <p class="tab-links active-link" data-tab="ifts">IFTS</p>
+                  <p class="tab-links" data-tab="game">Game Dev</p>
+                  <p class="tab-links" data-tab="3d">Modellazione 3D</p>
+                </div>
+              
+                <div class="tab-contents active-tab" data-content="ifts">
+                  <ul>
+                    <li>
+                      <i>2024 - ATTUALE Cagliari, Italia</i> <br>
+                      <b>ISTRUZIONE E FORMAZIONE TECNICA SUPERIORE (IFTS) - VR NEL METAVERSO</b> 
+                      <i>| Formatica S.c.a.r.l.</i> <br>
+                      
+                        • Le economie del metaverso, Blockchain, Nft , Crypto e sviluppo di esperienze nel Metaverso. <br>
+                        • Studio dell'Intelligenza Artificiale Generativa e Large Linguage Models (LLMs). <br>
+                        • Realtà virtuale, studio e design degli spazi virtuali. <br>
+                        • Studio del linguaggio C # e concetti di Object-Oriented Programming (OOP) ed Event Driven Programming (EDP) applicati in contesti di sviluppo nel Game Engine Unity. <br>
+                        • Modellazione 3D, Texturing, Sculpting con Blender. <br>
+                        • Competenze linguistiche: lingua inglese, inglese tecnico. <br>
+                        • Algoritmi e Machine Learning, Big Data e Data Mining. <br>
+                        • Studio del linguaggio Python per la gestione di LLMs. <br>
+                        • Creazione e ottimizzazione di modelli fotogrammetrici con 3DF Zephyr e Blender. <br>
+                    </li>
+                  </ul> 
+                  <i>Durata: 990 ore</i> <br>
+                  <b>Livello 4 EQF </b>
+                </div>
+                <div class="tab-contents" data-content="game">
+                  <ul>
+                    <li>
+                      <i>2023 - 2024 Cagliari, Italia</i> <br>
+                      <b>MODELLATORE 3D - SVILUPPATORE SOFTWARE</b> 
+                      <i>| CREATIVE FACTORY</i> <br>
+                      
+                        Realizzazione di una demo dimostrativa per dispositivi mobile con le seguenti feature e funzionalità:<br>
+                        • Tracking GPS real time. <br>
+                        • UI/UX animate, complete e funzionanti. <br>
+                        • Player audio e video per la gestione di filmati e registrazioni audio <br>
+                        • Mappa in 3D di una porzione interessata di Cagliari creata con tecniche miste di generazione automatica e modellazione manuale. <br>
+                        • Creazione e gestione delle scene in 3D, materiali, texture e luci. <br>
+                    </li>
+                  </ul> 
+                </div>
+                <div class="tab-contents" data-content="3d">
+                  <ul>
+                    <li>
+                      <i>2023 - 2024 Cagliari, Italia</i> <br>
+                      <b>MODELLATORE 3D - SVILUPPATORE SOFTWARE</b> 
+                      <i>| CREATIVE FACTORY</i> <br>
+                      
+                        Realizzazione di una demo dimostrativa per dispositivi mobile con le seguenti feature e funzionalità:<br>
+                        • Tracking GPS real time. <br>
+                        • UI/UX animate, complete e funzionanti. <br>
+                        • Player audio e video per la gestione di filmati e registrazioni audio <br>
+                        • Mappa in 3D di una porzione interessata di Cagliari creata con tecniche miste di generazione automatica e modellazione manuale. <br>
+                        • Creazione e gestione delle scene in 3D, materiali, texture e luci. <br>
+                    </li>
+                  </ul> 
+                </div>
+              </div>
+
+      </p>
+        </section>
+
+      <!-- Competenze -->
+      <section.1 class="main-content">
+        <section id="competenze">
+          
+          <p> 
+            <div class="tab-wrapper tab-wrapper-competenze">
+              <h2><i class="ri-gamepad-line"></i>Competenze</h2>
+            
+              <div class="tab-titles">
+                <p class="tab-links active-link" data-tab="blender">Blender</p>
+                <p class="tab-links" data-tab="unity">Unity</p>
+                <p class="tab-links" data-tab="unreal">Unreal</p>
+              </div>
+            
+              <div class="tab-contents active-tab" data-content="blender">cose fatte su blender</div>
+              <div class="tab-contents" data-content="unity">rrrr</div>
+              <div class="tab-contents" data-content="unreal">llll</div>
+            </div>
+
+    </p>
+        </section>
+
+      <!-- Coding -->
+      <section id="coding" class="competenze">
+        <h2><i class="ri-bug-line"></i>Coding</h2>
+        <ul>
+          <li class="image-item" data-tooltip="Buone conoscenze, linguaggio principale utilizzato">C#</li>
+          <li class="image-item" data-tooltip="Primi linguaggi studiati, non più molto utilizzati">C/C++</li>
+          <li class="image-item" data-tooltip="Linguaggio di VS utilizzato su UE">Blueprint</li>
+          <li class="image-item" data-tooltip="Conoscenze di base, utilizzati per progetti specifici">Python/GDS</li>
+          <li class="image-item" data-tooltip="Conoscenze di base">MD/Latex</li>
+          <li class="image-item" data-tooltip="Buona familiarità, utilizzati per la creazione di pagine web basilari">HTML/CSS/Javascript</li>
+          <li class="image-item" data-tooltip="Buona familiarità, IDE principali utilizzati">Visual Studio / VS Code</li>
+          <li class="image-item" data-tooltip="Conoscenze di base, con uso regolare di GitHub per l'hosting di repository e pagine web">Git/GitHub</li>
+        </ul>
+      </section>
+
+      <!-- Form di contatto --> 
+      <section id="contattami">
+        <h2><i class="ri-mail-send-line"></i>Contattami</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Oggetto</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn"><i class="ri-mail-send-line"></i> Invia messaggio</button>
+        </form>
+      </section>
+
+
+    <!-- Footer -->     
+    <footer>
+      <section style="flex: 0.7;">
+      <div class="footer-links">
+        <h2><i class="ri-macbook-line"> Software utilizzati:</i></h2>
+      </div>
+      <div class="marquee-container">
+      <ul class="marquee-content">
+        <li>
+          <div class="image-item" data-tooltip="Adobe Photoshop">
+            <img src="../assets/img/photoshop.png" alt="1" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Blender">
+            <img src="../assets/img/blender.png" alt="2" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Unity">
+            <img src="../assets/img/unity.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Unreal Engine">
+            <img src="../assets/img/ue.png" alt="1" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Godot">
+            <img src="../assets/img/godot.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Adobe Substance Painter">
+            <img src="../assets/img/subpainter.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Adobe Substance Designer">
+            <img src="../assets/img/subdesigner.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Visual Studio">
+            <img src="../assets/img/vs.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Visual Studio Code">
+            <img src="../assets/img/vscode.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="3D Studio Max">
+            <img src="../assets/img/studio.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="V-Ray">
+            <img src="../assets/img/vray.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Agisoft Metashape">
+            <img src="../assets/img/metashape.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="3DF Zephir">
+            <img src="../assets/img/3dflow.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Meshroom">
+            <img src="../assets/img/meshroom.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Autocad">
+            <img src="../assets/img/autocad.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Materialize">
+            <img src="../assets/img/boundingbox.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Rhinoceros">
+            <img src="../assets/img/rhinoceros.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="3D Coat">
+            <img src="../assets/img/3dcoat.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Canva">
+            <img src="../assets/img/canva.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Gimp">
+            <img src="../assets/img/gimp.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Adobe Lightroom">
+            <img src="../assets/img/lightroom.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Quixel Mixer">
+            <img src="../assets/img/quixelmixer.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Raylib">
+            <img src="../assets/img/raylib.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Ollama">
+            <img src="../assets/img/ollama.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Playcanvas">
+            <img src="../assets/img/playcanvas.png" alt="3" />
+          </div>
+        </li>
+        <li>
+          <div class="image-item" data-tooltip="Touch Designer">
+            <img src="../assets/img/touchdesigner.png" alt="3" />
+          </div>
+        </li>
+      </ul>
+      </div>
+      <!-- slide animata di immagini --> 
+      <!-- <div class="scrolling-container">
+        <div class="scrolling-track">
+          <div class="image-item" data-tooltip="Adobe Photoshop">
+            <img src="../assets/img/photoshop.png" alt="1" />
+          </div>
+          <div class="image-item" data-tooltip="Blender">
+            <img src="../assets/img/blender.png" alt="2" />
+          </div>
+          <div class="image-item" data-tooltip="Unity">
+            <img src="../assets/img/unity.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Unreal Engine">
+            <img src="../assets/img/ue.png" alt="1" />
+          </div>
+          <div class="image-item" data-tooltip="BabylonJs">
+            <img src="../assets/img/babylon.png" alt="2" />
+          </div>
+          <div class="image-item" data-tooltip="Godot">
+            <img src="../assets/img/godot.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Adobe Substance Painter">
+            <img src="../assets/img/subpainter.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Adobe Substance Designer">
+            <img src="../assets/img/subdesigner.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Visual Studio">
+            <img src="../assets/img/vs.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Visual Studio Code">
+            <img src="../assets/img/vscode.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="3D Studio Max">
+            <img src="../assets/img/studio.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="V-Ray">
+            <img src="../assets/img/vray.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Agisoft Metashape">
+            <img src="../assets/img/metashape.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="3DF Zephir">
+            <img src="../assets/img/3dflow.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Meshroom">
+            <img src="../assets/img/meshroom.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Autocad">
+            <img src="../assets/img/autocad.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Materialize">
+            <img src="../assets/img/boundingbox.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Rhinoceros">
+            <img src="../assets/img/rhinoceros.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="3D Coat">
+            <img src="../assets/img/3dcoat.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Canva">
+            <img src="../assets/img/canva.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Gimp">
+            <img src="../assets/img/gimp.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Adobe Lightroom">
+            <img src="../assets/img/lightroom.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Quixel Mixer">
+            <img src="../assets/img/quixelmixer.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Raylib">
+            <img src="../assets/img/raylib.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Ollama">
+            <img src="../assets/img/ollama.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Playcanvas">
+            <img src="../assets/img/playcanvas.png" alt="3" />
+          </div>
+          <div class="image-item" data-tooltip="Touch Designer">
+            <img src="../assets/img/touchdesigner.png" alt="3" />
+          </div>
+        </div>
+      </div> --> 
+      </section>
+    </footer>
+
+    <!-- Balloon Back to Top Button -->
+    <a href="#top" class="back-to-top">
+      <div class="balloon-icon">
+        <i class="ri-arrow-up-fill"></i>
+      </div>
+    </a>
+
+    <!-- Script sezioni dinamiche -->
+    <script>
+      // Script delle sezioni dinamiche
+      document.querySelectorAll('.tab-wrapper').forEach(wrapper => {
+        const tabLinks = wrapper.querySelectorAll('.tab-links');
+        const tabContents = wrapper.querySelectorAll('.tab-contents');
+      
+        tabLinks.forEach(link => {
+          link.addEventListener('click', function () {
+            const tabName = this.getAttribute('data-tab');
+      
+            // Rimuovi classi attive
+            tabLinks.forEach(link => link.classList.remove('active-link'));
+            tabContents.forEach(content => content.classList.remove('active-tab'));
+      
+            // Aggiungi classi attive al clic
+            this.classList.add('active-link');
+            wrapper.querySelector(`.tab-contents[data-content="${tabName}"]`).classList.add('active-tab');
+          });
+        });
+      });
+    </script>
+    <!-- Script per il tooltip -->
+    <script>
+      // Crea il tooltip per l'hover degli elementi
+      const tooltip = document.createElement('div');
+      tooltip.id = 'custom-tooltip';
+      document.body.appendChild(tooltip);
+
+      const imageItems = document.querySelectorAll('.image-item');
+
+      imageItems.forEach(item => {
+        item.addEventListener('mouseenter', (e) => {
+          const text = item.getAttribute('data-tooltip');
+          tooltip.textContent = text;
+          tooltip.style.opacity = '1';
+        });
+
+        item.addEventListener('mousemove', (e) => {
+          tooltip.style.left = e.clientX + 10 + 'px';
+          tooltip.style.top = e.clientY - 40 + 'px';
+        });
+
+        item.addEventListener('mouseleave', () => {
+          tooltip.style.opacity = '0';
+        });
+      });
+    </script>
+    <!-- vecchio script per l'animazione delle icone 
+    <script>
+      const track = document.getElementById("marqueeTrack");
+      let position = 0;
+
+      function animateMarquee() {
+        position -= 1;
+        if (Math.abs(position) >= track.scrollWidth / 2) {
+          position = 0;
+        }
+        track.style.transform = `translateX(${position}px)`;
+        requestAnimationFrame(animateMarquee);
+      }
+
+      // Duplico le immagini per effetto infinito
+      window.addEventListener('load', () => {
+        track.innerHTML += track.innerHTML;
+        animateMarquee();
+      });
+    </script>
+    -->
+    <!-- Script bottone -->
+    <script>
+      // Seleziona il bottone
+      const backToTopButton = document.querySelector('.back-to-top');
+
+      // Aggiungi un listener per il scroll
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) { // Se si è scorsi di più di 600px
+          backToTopButton.classList.add('show-back-to-top'); // Mostra il bottone
+        } else {
+          backToTopButton.classList.remove('show-back-to-top'); // Nascondi il bottone
+        }
+      });
+
+      // Aggiungi un listener per il clic
+      backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita l'azione predefinita del link
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scorre fino alla parte superiore della pagina con un effetto smooth
+      });
+    </script>
+    <!-- Script globali -->
+    <script src="index.js"></script>
+  </body>
+
+</html>
