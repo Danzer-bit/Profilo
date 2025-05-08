@@ -7,9 +7,12 @@
   <title>Curriculum Vitae di Alexandro Meloni</title>
   <!-- Carichiamo un font esterno -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
 
   <!-- Carichiamo una libreria di icone -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
   <!-- ✅ CSS ESTERNO -->
   <link rel="stylesheet" href="wipstyle.css">
@@ -101,7 +104,79 @@
     button {
       cursor: pointer;
     }
+     
+    /*CSS del Tetris*/
 
+    .tris-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 6px;
+    aspect-ratio: 3 / 1;
+  }
+
+  .cell-button {
+    background: rgb(255, 255, 255);
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    font-size: 2rem;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .cell-button:hover {
+    background-color: #fff8e1;
+    transform: scale(1.05);
+  }
+
+  .icon-x {
+    color: #e56735;
+    font-size: 2.5rem;
+    animation: bounceIn 0.4s;
+  }
+
+  .icon-o {
+    color: #847ced;
+    font-size: 2.5rem;
+    animation: bounceIn 0.4s;
+  }
+
+  @keyframes bounceIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .icon-animated {
+    margin-bottom: 1rem;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  #game-container > div:last-child {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #game-container .button {
+    margin: 0 auto;
+    justify-content: center;
+  }
   </style>
 
 </head>
@@ -135,28 +210,7 @@
   </header>
 
   <main class="container-flex">
-    <!-- Sidebar -->
-    <!-- <section class="right-sidebar">
-      <h3><i class="ri-list-check"></i>  <b style="color: black;; font-size: 26px;">Link utili:</b></h3>
-      <ul>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Portfolio Gallery</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Animation Showreel</a></span> <br> <i style="margin-left: 8px;">Video montage delle animazioni</i> <br> <i style="margin-left: 8px;">renderizzate con Blender.</i> </li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> CV Europass</a></span> <br> <i style="margin-left: 8px;">Scarica il mio CV Europass aggiornato.</i></li>
-        <p><br></p>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Sketchfab viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Custom Babilon.Js viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Custom Playcanva viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Visualizzatore 3D - Gradio viewer</a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <p><br></p>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Sito web Team di sviluppo - Hololizard <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Unity Games <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Unreal Engine 5 Games <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-        <li><span><a class= "sidebar-link" href= "../index.html"> Pubblicazioni <i>(in corso)</i></a></span> <br> <i style="margin-left: 8px;">Galleria di immagini dei miei lavori.</i></li>
-      </ul>
-    </section> -->
-
-    <!-- Contenuto principale -->
-    <!-- Video -->
+    
     <section.1 class="main-content">
         <div class="card">
           <br><br>
@@ -193,16 +247,113 @@
           
         </div>
     </section>
-
-      
+    
    
+    
+    
   <footer>
-    <!-- <div class="footer-links">
-      <button onclick="window.location.href='../index.html'">
-        <i class="ri-home-line"></i> Home
-      </button>
+     <!-- GIOCO TRIS -->
+    <div class="container-flex">
+      <div class="main-content">
+        <div id="game-container" style="max-width: 420px; margin: auto; text-align: center;">
+          <br>
+          <h1 class="yellow">Ti va una partita?</h1>
+    
+          <div id="board" class="tris-board"></div>
+    
+          <p id="status" style="margin: 1rem 0; font-weight: bold;"></p>
+    
+          <div style="text-align: center;">
+            <button class="button" onclick="resetGame()">Riprova</button>
+            <br> <br> <br>
+          </div>
+        </div>
+      </div>
     </div>
-    <br><br><br> -->
+    
+    <script>
+      const boardElement = document.getElementById('board');
+      const statusText = document.getElementById('status');
+      let board = Array(9).fill(null);
+      let currentPlayer = 'X';
+      let gameOver = false;
+    
+      function createBoard() {
+        boardElement.innerHTML = '';
+        board.forEach((cell, index) => {
+          const cellBtn = document.createElement('button');
+          cellBtn.className = 'cell-button';
+          if (cell === 'X') {
+            cellBtn.innerHTML = '<i class="fas fa-times icon-x"></i>';
+          } else if (cell === 'O') {
+            cellBtn.innerHTML = '<i class="fas fa-circle icon-o"></i>';
+          } else {
+            cellBtn.textContent = '';
+          }
+          cellBtn.onclick = () => handleMove(index);
+          boardElement.appendChild(cellBtn);
+        });
+      }
+    
+      function handleMove(index) {
+        if (board[index] || gameOver) return;
+    
+        board[index] = currentPlayer;
+        createBoard();
+    
+        if (checkWinner(currentPlayer)) {
+          let message = '';
+          if (currentPlayer === 'X') {
+            message = 'Hai vinto!';
+          } else {
+            message = 'Hai perso!';
+          }
+          statusText.innerHTML = `<h1>${message}</h1>`;
+          gameOver = true;
+          return;
+        }
+    
+        if (!board.includes(null)) {
+          statusText.innerHTML = '<h1>Pareggio!</h1>';
+          gameOver = true;
+          return;
+        }
+    
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    
+        if (currentPlayer === 'O') {
+          setTimeout(cpuMove, 400);
+        }
+      }
+    
+      function cpuMove() {
+        const emptyIndices = board
+          .map((val, i) => (val === null ? i : null))
+          .filter(i => i !== null);
+    
+        const randomIndex = emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
+        handleMove(randomIndex);
+      }
+    
+      function checkWinner(player) {
+        const wins = [
+          [0,1,2], [3,4,5], [6,7,8],
+          [0,3,6], [1,4,7], [2,5,8],
+          [0,4,8], [2,4,6]
+        ];
+        return wins.some(comb => comb.every(i => board[i] === player));
+      }
+    
+      function resetGame() {
+        board = Array(9).fill(null);
+        currentPlayer = 'X';
+        gameOver = false;
+        statusText.innerHTML = '';
+        createBoard();
+      }
+    
+      createBoard();
+    </script>
   </footer>
 
   <script>
@@ -224,7 +375,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
   </script>
-  <!-- Carichiamo lo script JavaScript che gestisce il form di contatto -->
+  <!-- script JavaScript che gestisce il form di contatto -->
   <script src="index.js"></script>
 </body>
 

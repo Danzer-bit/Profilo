@@ -75,11 +75,7 @@ iframe {
 }
 
 .main-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 100%;
+	
 	
 }
 
@@ -641,3 +637,6 @@ margin: 20px 0 35px;
 	display: block;
   }
 
+
+
+ 
