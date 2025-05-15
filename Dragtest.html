@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Immagine Flottante Draggabile</title>
+  <style>
+    @keyframes bounce-in {
+      0% {
+        transform: scale(0.8) translateY(-20px);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.05) translateY(5px);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    #floating-img {
+      position: fixed;
+      top: 50px;
+      left: 50px;
+      width: 100px;
+      height: auto;
+      z-index: 9999;
+      cursor: move;
+      user-select: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      animation: bounce-in 0.6s ease-out;
+    }
+
+    #floating-img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://example.com" target="_blank" id="drag-link">
+    <img src="assets/img/godot.png" id="floating-img" alt="Link Flottante" />
+  </a>
+
+  <script>
+    (function () {
+      const img = document.getElementById('floating-img');
+      const link = document.getElementById('drag-link');
+      let isDragging = false;
+      let offsetX = 0, offsetY = 0;
+      let startX = 0, startY = 0;
+
+      function clamp(value, min, max) {
+        return Math.min(Math.max(value, min), max);
+      }
+
+      function updatePosition(x, y) {
+        const imgWidth = img.offsetWidth;
+        const imgHeight = img.offsetHeight;
+        const maxX = window.innerWidth - imgWidth;
+        const maxY = window.innerHeight - imgHeight;
+
+        const clampedX = clamp(x, 0, maxX);
+        const clampedY = clamp(y, 0, maxY);
+
+        img.style.left = clampedX + 'px';
+        img.style.top = clampedY + 'px';
+      }
+
+      link.addEventListener('click', function (e) {
+        if (isDragging) e.preventDefault();
+      });
+
+      img.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        offsetX = e.clientX - img.offsetLeft;
+        offsetY = e.clientY - img.offsetTop;
+        startX = e.clientX;
+        startY = e.clientY;
+        isDragging = false;
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+      });
+
+      function onMouseMove(e) {
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) isDragging = true;
+
+        updatePosition(e.clientX - offsetX, e.clientY - offsetY);
+      }
+
+      function onMouseUp() {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+        setTimeout(() => { isDragging = false; }, 0);
+      }
+
+      img.addEventListener('touchstart', function (e) {
+        const touch = e.touches[0];
+        offsetX = touch.clientX - img.offsetLeft;
+        offsetY = touch.clientY - img.offsetTop;
+        startX = touch.clientX;
+        startY = touch.clientY;
+        isDragging = false;
+        document.addEventListener('touchmove', onTouchMove, { passive: false });
+        document.addEventListener('touchend', onTouchEnd);
+      });
+
+      function onTouchMove(e) {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const dx = touch.clientX - startX;
+        const dy = touch.clientY - startY;
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) isDragging = true;
+
+        updatePosition(touch.clientX - offsetX, touch.clientY - offsetY);
+      }
+
+      function onTouchEnd() {
+        document.removeEventListener('touchmove', onTouchMove);
+        document.removeEventListener('touchend', onTouchEnd);
+        setTimeout(() => { isDragging = false; }, 0);
+      }
+    })();
+  </script>
+
+</body>
+</html>

@@ -74,6 +74,7 @@
         <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('one')">Gradio Chatbot</p>
             <p class="tab-links" onclick="opentab('two')">Gradio Kokoro TTS</p>
+            <p class="tab-links" onclick="opentab('tre')">Gradio 2D to 3D</p>
         </div>
         <!-- Primo tab -->
         <div class="tab-contents active-tab" id="one">
@@ -123,6 +124,41 @@
           </div>
           <br>
           <p style="text-align: center;">Esempio di TTS implementato con Gradio.</p> 
+        
+          <br><br>
+          <section>
+            <h2>Web App con Gradio</h2>
+            <p>
+              Questo progetto è una <strong>web application interattiva</strong> sviluppata utilizzando <a href="https://www.gradio.app/" target="_blank">Gradio</a>, 
+              una libreria Python che permette di creare interfacce web semplici e veloci per modelli di machine learning e funzioni Python.
+            </p>
+            <p>
+              Con Gradio, è possibile trasformare rapidamente una funzione Python in una <strong>web app accessibile via browser</strong> senza dover scrivere codice HTML, 
+              CSS o JavaScript. L'interfaccia è intuitiva e adatta anche per utenti non tecnici.
+            </p>
+            <p>
+              In questa web app ho integrato due applicazioni che consentono all'utente di dialogare con un Chatbox o di generare dei file audio attraverso il modello TTS di <b>Kokoro. </b>
+            </p>
+            <p>
+              Il progetto è stato deployato su <strong>Hugging Face Spaces</strong> ed è accessibile pubblicamente.
+            </p>
+          </section>
+        </div>
+
+        <!-- Terzo tab -->
+        <div class="tab-contents" id="tre">
+          <div style="text-align: center;">
+            <iframe 
+              src="https://danzer93-dpt-depth-estimation-3d-obj.hf.space"
+              width="800" 
+              height="500" 
+              title="Gradio"
+              style="border:1px solid #ccc;"
+              loading="lazy">
+            </iframe>
+          </div>
+          <br>
+          <p style="text-align: center;">Zero-shot depth estimation with DPT + 3D Point Cloud.</p> 
         
           <br><br>
           <section>
