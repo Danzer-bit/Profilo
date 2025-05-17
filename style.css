@@ -57,6 +57,12 @@ iframe {
     border: 2px solid #ccc; /* Aggiungi un bordo sottile e chiaro */
 }
 
+textarea {
+
+	resize: vertical;
+
+}
+
 .container-flex {
 	display: flex;
 	gap: 4rem; /* Aggiungiamo un po' di spazio tra la sidebar e il contenuto */
